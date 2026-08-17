@@ -24,15 +24,15 @@ export default function Home(){
             </div>
           </div>
           <p>
-            <a href="#" className="btn btn-primary p-3 px-5 py-4 mr-md-2">
+            <Link to="#" className="btn btn-primary p-3 px-5 py-4 mr-md-2">
               Get in Touch
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="btn btn-outline-primary p-3 px-5 py-4 ml-md-2"
             >
               Contact
-            </a>
+            </Link>
           </p>
         </div>
       </div>
@@ -56,34 +56,34 @@ export default function Home(){
           </p>
           <ul className="mt-5 do-list">
             <li className="ftco-animate">
-              <a href="#">
+              <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage boosts brain power
-              </a>
+              </Link>
             </li>
             <li className="ftco-animate">
-              <a href="#">
+              <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to breathe better
-              </a>
+              </Link>
             </li>
             <li className="ftco-animate">
-              <a href="#">
+              <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage improves your strength
-              </a>
+              </Link>
             </li>
             <li className="ftco-animate">
-              <a href="#">
+              <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to focus
-              </a>
+              </Link>
             </li>
             <li className="ftco-animate">
-              <a href="#">
+              <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps give meaning to your day
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -106,11 +106,11 @@ export default function Home(){
                 Vokalia and Consonantia, there live the blind texts.
               </p>
               <p>
-                <a href="#" className="btn btn-white px-4 py-3">
+                <Link to="#" className="btn btn-white px-4 py-3">
                   {" "}
                   Book A Treatment{" "}
                   <span className="ion-ios-arrow-round-forward" />
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -128,11 +128,11 @@ export default function Home(){
                 Vokalia and Consonantia, there live the blind texts.
               </p>
               <p>
-                <a href="#" className="btn btn-white px-4 py-3">
+                <Link to="#" className="btn btn-white px-4 py-3">
                   {" "}
                   Book A Treatment{" "}
                   <span className="ion-ios-arrow-round-forward" />
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -150,11 +150,11 @@ export default function Home(){
                 Vokalia and Consonantia, there live the blind texts.
               </p>
               <p>
-                <a href="#" className="btn btn-white px-4 py-3">
+                <Link to="#" className="btn btn-white px-4 py-3">
                   {" "}
                   Book A Treatment{" "}
                   <span className="ion-ios-arrow-round-forward" />
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -472,9 +472,9 @@ export default function Home(){
                 <li>Medical Treatments</li>
                 <li>Hair Removal</li>
               </ul>
-              <a href="#" className="btn btn-primary d-block px-2 py-4">
+              <Link to="#" className="btn btn-primary d-block px-2 py-4">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -493,9 +493,9 @@ export default function Home(){
                 <li>Medical Treatments</li>
                 <li>Hair Removal</li>
               </ul>
-              <a href="#" className="btn btn-primary d-block px-2 py-4">
+              <Link to="#" className="btn btn-primary d-block px-2 py-4">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -514,9 +514,9 @@ export default function Home(){
                 <li>Medical Treatments</li>
                 <li>Hair Removal</li>
               </ul>
-              <a href="#" className="btn btn-primary d-block px-2 py-4">
+              <Link to="#" className="btn btn-primary d-block px-2 py-4">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -736,11 +736,11 @@ export default function Home(){
       <div className="row d-flex">
         <div className="col-md-4 d-flex ftco-animate">
           <div className="blog-entry justify-content-end">
-            <a
-              href="blog-single.html"
+            <Link
+              to="blog-single.html"
               className="block-20"
               style={{ backgroundImage: 'url("images/image_1.jpg")' }}
-            ></a>
+            ></Link>
             <div className="text p-4 float-right d-block">
               <div className="d-flex align-items-center pt-2 mb-4">
                 <div className="one">
@@ -752,7 +752,7 @@ export default function Home(){
                 </div>
               </div>
               <h3 className="heading mt-2">
-                <a href="#">Is wellness the new luxury</a>
+                <Link to="#">Is wellness the new luxury</Link>
               </h3>
               <p>
                 A small river named Duden flows by their place and supplies it
@@ -763,11 +763,11 @@ export default function Home(){
         </div>
         <div className="col-md-4 d-flex ftco-animate">
           <div className="blog-entry justify-content-end">
-            <a
-              href="blog-single.html"
+            <Link
+              to="blog-single.html"
               className="block-20"
               style={{ backgroundImage: 'url("images/image_2.jpg")' }}
-            ></a>
+            ></Link>
             <div className="text p-4 float-right d-block">
               <div className="d-flex align-items-center pt-2 mb-4">
                 <div className="one">
@@ -779,7 +779,7 @@ export default function Home(){
                 </div>
               </div>
               <h3 className="heading mt-2">
-                <a href="#">Is wellness the new luxury</a>
+                <Link to="#">Is wellness the new luxury</Link>
               </h3>
               <p>
                 A small river named Duden flows by their place and supplies it
@@ -790,11 +790,11 @@ export default function Home(){
         </div>
         <div className="col-md-4 d-flex ftco-animate">
           <div className="blog-entry">
-            <a
-              href="blog-single.html"
+            <Link
+              to="blog-single.html"
               className="block-20"
               style={{ backgroundImage: 'url("images/image_3.jpg")' }}
-            ></a>
+            ></Link>
             <div className="text p-4 float-right d-block">
               <div className="d-flex align-items-center pt-2 mb-4">
                 <div className="one">
@@ -806,7 +806,7 @@ export default function Home(){
                 </div>
               </div>
               <h3 className="heading mt-2">
-                <a href="#">Is wellness the new luxury</a>
+                <Link to="#">Is wellness the new luxury</Link>
               </h3>
               <p>
                 A small river named Duden flows by their place and supplies it
@@ -828,48 +828,48 @@ export default function Home(){
       </div>
       <div className="row">
         <div className="col-md-3 ftco-animate">
-          <a
-            href="images/gallery-1.jpg"
+          <Link
+            to="images/gallery-1.jpg"
             className="gallery image-popup img d-flex align-items-center"
             style={{ backgroundImage: "url(images/gallery-1.jpg)" }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-instagram" />
             </div>
-          </a>
+          </Link>
         </div>
         <div className="col-md-3 ftco-animate">
-          <a
-            href="images/gallery-2.jpg"
+          <Link
+            to="images/gallery-2.jpg"
             className="gallery image-popup img d-flex align-items-center"
             style={{ backgroundImage: "url(images/gallery-2.jpg)" }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-instagram" />
             </div>
-          </a>
+          </Link>
         </div>
         <div className="col-md-3 ftco-animate">
-          <a
-            href="images/gallery-3.jpg"
+          <Link
+            to="images/gallery-3.jpg"
             className="gallery image-popup img d-flex align-items-center"
             style={{ backgroundImage: "url(images/gallery-3.jpg)" }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-instagram" />
             </div>
-          </a>
+          </Link>
         </div>
         <div className="col-md-3 ftco-animate">
-          <a
-            href="images/gallery-4.jpg"
+          <Link
+            to="images/gallery-4.jpg"
             className="gallery image-popup img d-flex align-items-center"
             style={{ backgroundImage: "url(images/gallery-4.jpg)" }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-instagram" />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
