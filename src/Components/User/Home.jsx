@@ -9,8 +9,8 @@ export default function Home(){
   >
     <div className="overlay" />
     <div className="container">
-      <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-        <div className="col-md-10 ftco-animate text-center">
+      <div className="row no-gutters slider-text  align-items-center justify-content-center">
+        <div className="col-md-10  text-center">
           <div className="icon">
             <span className="flaticon-lotus" />
           </div>
@@ -45,42 +45,67 @@ export default function Home(){
     <div className="container">
       <div className="row justify-content-end">
         <div className="col-md-6">
-          <div className="heading-section ftco-animate">
+          <div className="heading-section ">
             <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
           </div>
-          <p className="ftco-animate">
+          <p className="">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts. Separated they
             live in Bookmarksgrove right at the coast of the Semantics, a large
             language ocean.
           </p>
           <ul className="mt-5 do-list">
+<<<<<<< Updated upstream
             <li className="ftco-animate">
               <Link to="#">
+=======
+            <li className="">
+              <a href="#">
+>>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage boosts brain power
               </Link>
             </li>
+<<<<<<< Updated upstream
             <li className="ftco-animate">
               <Link to="#">
+=======
+            <li className="">
+              <a href="#">
+>>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to breathe better
               </Link>
             </li>
+<<<<<<< Updated upstream
             <li className="ftco-animate">
               <Link to="#">
+=======
+            <li className="">
+              <a href="#">
+>>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage improves your strength
               </Link>
             </li>
+<<<<<<< Updated upstream
             <li className="ftco-animate">
               <Link to="#">
+=======
+            <li className="">
+              <a href="#">
+>>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to focus
               </Link>
             </li>
+<<<<<<< Updated upstream
             <li className="ftco-animate">
               <Link to="#">
+=======
+            <li className="">
+              <a href="#">
+>>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps give meaning to your day
               </Link>

@@ -9,7 +9,7 @@ export default function User_Header(){
     <div className="container">
       <Link className="navbar-brand" to="index.html">
         <span className="flaticon-lotus" />
-        Energen
+        Energen S
       </Link>
       <button
         className="navbar-toggler"
