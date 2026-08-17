@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
 export default function Home(){
   return(
-    <>
+       <>
   <section
     className="hero-wrap js-fullheight"
     style={{ backgroundImage: 'url("images/bg_1.jpg")' }}
@@ -38,6 +38,17 @@ export default function Home(){
       </div>
     </div>
   </section>
+<<<<<<< HEAD
+ <section
+  className="ftco-section ftco-intro"
+  style={{ backgroundImage: "url(images/intro.jpg)" }}
+>
+  <div className="container">
+    <div className="row justify-content-end">
+      <div className="col-md-6">
+        <div className="heading-section ftco-animate">
+          <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
+=======
   <section
     className="ftco-section ftco-intro"
     style={{ backgroundImage: "url(images/intro.jpg)" }}
@@ -55,66 +66,105 @@ export default function Home(){
             language ocean.
           </p>
           <ul className="mt-5 do-list">
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
               <Link to="#">
-=======
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
+
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage boosts brain power
               </Link>
             </li>
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
-              <Link to="#">
-=======
+              <Link to="
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
+
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to breathe better
               </Link>
             </li>
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
               <Link to="#">
-=======
+
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage improves your strength
-              </Link>
+              <link/>
             </li>
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
               <Link to="#">
-=======
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to focus
-              </Link>
+              <Link/>
             </li>
-<<<<<<< Updated upstream
-            <li className="ftco-animate">
+
+            <li className="">
               <Link to="#">
-=======
+
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps give meaning to your day
-              </Link>
+              <Link/>
             </li>
           </ul>
+>>>>>>> ff533c1f5a307d78e58322ef2b8506688b6b0c0d
         </div>
+        <p className="">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean.
+        </p>
+        <ul className="mt-5 do-list">
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage boosts brain power
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage helps you to breathe better
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage improves your strength
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage helps you to focus
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage helps give meaning to your day
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
+<<<<<<< HEAD
+  </div>
+</section>
+=======
   </section>
+>>>>>>> ff533c1f5a307d78e58322ef2b8506688b6b0c0d
+
   <section className="ftco-section ftco-no-pt ftco-no-pb">
     <div className="container">
       <div className="row no-gutters">
