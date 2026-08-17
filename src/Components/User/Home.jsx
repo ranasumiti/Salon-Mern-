@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
 export default function Home(){
   return(
-    <>
+       <>
   <section
     className="hero-wrap js-fullheight"
     style={{ backgroundImage: 'url("images/bg_1.jpg")' }}
@@ -55,66 +55,61 @@ export default function Home(){
             language ocean.
           </p>
           <ul className="mt-5 do-list">
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
               <Link to="#">
-=======
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
+
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage boosts brain power
               </Link>
             </li>
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
-              <Link to="#">
-=======
+              <Link to="
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
+
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to breathe better
               </Link>
             </li>
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
               <Link to="#">
-=======
+
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage improves your strength
-              </Link>
+              <link/>
             </li>
-<<<<<<< Updated upstream
+
             <li className="ftco-animate">
               <Link to="#">
-=======
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to focus
-              </Link>
+              <Link/>
             </li>
-<<<<<<< Updated upstream
-            <li className="ftco-animate">
+
+            <li className="">
               <Link to="#">
-=======
+
             <li className="">
               <a href="#">
->>>>>>> Stashed changes
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps give meaning to your day
-              </Link>
+              <Link/>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+
   <section className="ftco-section ftco-no-pt ftco-no-pb">
     <div className="container">
       <div className="row no-gutters">
