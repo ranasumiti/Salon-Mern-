@@ -45,7 +45,7 @@ export default function Home(){
   <div className="container">
     <div className="row justify-content-end">
       <div className="col-md-6">
-        <div className="heading-section ftco-animate">
+        <div className="heading-section ">
           <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
         </div>
         <p className="">
