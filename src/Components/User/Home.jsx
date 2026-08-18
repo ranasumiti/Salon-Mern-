@@ -38,77 +38,58 @@ export default function Home(){
       </div>
     </div>
   </section>
-  <section
-    className="ftco-section ftco-intro"
-    style={{ backgroundImage: "url(images/intro.jpg)" }}
-  >
-    <div className="container">
-      <div className="row justify-content-end">
-        <div className="col-md-6">
-          <div className="heading-section ">
-            <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
-          </div>
-          <p className="">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean.
-          </p>
-          <ul className="mt-5 do-list">
-
-            <li className="ftco-animate">
-              <Link to="#">
-            <li className="">
-              <a href="#">
-
-                <span className="ion-ios-checkmark-circle mr-3" />
-                Spa &amp; Massage boosts brain power
-              </Link>
-            </li>
-
-            <li className="ftco-animate">
-              <Link to="
-            <li className="">
-              <a href="#">
-
-                <span className="ion-ios-checkmark-circle mr-3" />
-                Spa &amp; Massage helps you to breathe better
-              </Link>
-            </li>
-
-            <li className="ftco-animate">
-              <Link to="#">
-
-            <li className="">
-              <a href="#">
-                <span className="ion-ios-checkmark-circle mr-3" />
-                Spa &amp; Massage improves your strength
-              <link/>
-            </li>
-
-            <li className="ftco-animate">
-              <Link to="#">
-            <li className="">
-              <a href="#">
-                <span className="ion-ios-checkmark-circle mr-3" />
-                Spa &amp; Massage helps you to focus
-              <Link/>
-            </li>
-
-            <li className="">
-              <Link to="#">
-
-            <li className="">
-              <a href="#">
-                <span className="ion-ios-checkmark-circle mr-3" />
-                Spa &amp; Massage helps give meaning to your day
-              <Link/>
-            </li>
-          </ul>
+ <section
+  className="ftco-section ftco-intro"
+  style={{ backgroundImage: "url(images/intro.jpg)" }}
+>
+  <div className="container">
+    <div className="row justify-content-end">
+      <div className="col-md-6">
+        <div className="heading-section ">
+          <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
         </div>
+        <p className="">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean.
+        </p>
+        <ul className="mt-5 do-list">
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage boosts brain power
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage helps you to breathe better
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage improves your strength
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage helps you to focus
+            </Link>
+          </li>
+          <li className="">
+            <Link to="#">
+              <span className="ion-ios-checkmark-circle mr-3" />
+              Spa &amp; Massage helps give meaning to your day
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section className="ftco-section ftco-no-pt ftco-no-pb">
     <div className="container">
