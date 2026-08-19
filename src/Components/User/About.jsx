@@ -11,13 +11,13 @@ export default function About(){
     <div className="overlay" />
     <div className="container">
       <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-        <div className="col-md-9 ftco-animate text-center">
+        <div className="col-md-9 text-center">
           <h1 className="mb-3 bread">About</h1>
           <p className="breadcrumbs">
             <span className="mr-2">
-              <Link to="index.html">Home</Link>
+              <Link to="/">Home</Link>
             </span>{" "}
-            <span>About</span>
+            
           </p>
         </div>
       </div>
@@ -30,41 +30,41 @@ export default function About(){
     <div className="container">
       <div className="row justify-content-end">
         <div className="col-md-6">
-          <div className="heading-section ftco-animate">
+          <div className="heading-section">
             <h2 className="mb-4">Benefits of Doing Spa &amp; Massage</h2>
           </div>
-          <p className="ftco-animate">
+          <p className="">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts. Separated they
             live in Bookmarksgrove right at the coast of the Semantics, a large
             language ocean.
           </p>
           <ul className="mt-5 do-list">
-            <li className="ftco-animate">
+            <li className="">
               <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage boosts brain power
               </Link>
             </li>
-            <li className="ftco-animate">
+            <li className="">
               <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to breathe better
               </Link>
             </li>
-            <li className="ftco-animate">
+            <li className="">
               <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage improves your strength
               </Link>
             </li>
-            <li className="ftco-animate">
+            <li className="">
               <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps you to focus
               </Link>
             </li>
-            <li className="ftco-animate">
+            <li className="">
               <Link to="#">
                 <span className="ion-ios-checkmark-circle mr-3" />
                 Spa &amp; Massage helps give meaning to your day
@@ -151,7 +151,7 @@ export default function About(){
     <div className="container-fluid px-md-5">
       <div className="row">
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ftco">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-candle" />
             </div>
@@ -165,7 +165,7 @@ export default function About(){
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ftco">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-beauty-treatment" />
             </div>
@@ -179,7 +179,7 @@ export default function About(){
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ftco">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-stone" />
             </div>
@@ -193,7 +193,7 @@ export default function About(){
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ftco">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-relax" />
             </div>
@@ -212,12 +212,12 @@ export default function About(){
   <section className="ftco-section testimony-section">
     <div className="container">
       <div className="row justify-content-center mb-5 pb-3">
-        <div className="col-md-10 heading-section ftco-animate text-center">
+        <div className="col-md-10 heading-section  text-center">
           <h3 className="subheading">Testimony</h3>
           <h2 className="mb-1">Successful Stories</h2>
         </div>
       </div>
-      <div className="row ftco-animate">
+      <div className="row ">
         <div className="col-md-12">
           <div className="carousel-testimony owl-carousel">
             <div className="item">
@@ -366,7 +366,7 @@ export default function About(){
       <div className="row justify-content-center">
         <div className="col-md-10">
           <div className="row">
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={2560}>
@@ -376,7 +376,7 @@ export default function About(){
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={60}>
@@ -386,7 +386,7 @@ export default function About(){
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={50}>
@@ -396,7 +396,7 @@ export default function About(){
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={100}>
@@ -414,13 +414,13 @@ export default function About(){
   <section className="ftco-gallery ftco-section">
     <div className="container">
       <div className="row justify-content-center mb-5 pb-3">
-        <div className="col-md-7 heading-section ftco-animate text-center">
+        <div className="col-md-7 heading-section text-center">
           <h3 className="subheading">Gallery</h3>
           <h2 className="mb-1">See the latest photos</h2>
         </div>
       </div>
       <div className="row">
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-1.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -431,7 +431,7 @@ export default function About(){
             </div>
           </Link>
         </div>
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-2.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -442,7 +442,7 @@ export default function About(){
             </div>
           </Link>
         </div>
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-3.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -453,7 +453,7 @@ export default function About(){
             </div>
           </Link>
         </div>
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-4.jpg"
             className="gallery image-popup img d-flex align-items-center"

@@ -17,7 +17,7 @@ export default function Contact(){
             <span className="mr-2">
               <Link to="/">home</Link>
             </span>{" "}
-            <span>Contact us</span>
+            {/* <span>Contact us</span> */}
           </p>
         </div>
       </div>

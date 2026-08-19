@@ -167,7 +167,7 @@ export default function Home(){
     <div className="container-fluid px-md-5">
       <div className="row">
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-candle" />
             </div>
@@ -181,7 +181,7 @@ export default function Home(){
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-beauty-treatment" />
             </div>
@@ -195,7 +195,7 @@ export default function Home(){
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-stone" />
             </div>
@@ -209,7 +209,7 @@ export default function Home(){
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
-          <div className="services text-center ftco-animate">
+          <div className="services text-center ">
             <div className="icon d-flex justify-content-center align-items-center">
               <span className="flaticon-relax" />
             </div>
@@ -228,7 +228,7 @@ export default function Home(){
   <section className="ftco-section">
     <div className="container-fluid px-md-5">
       <div className="row justify-content-center mb-5 pb-3">
-        <div className="col-md-12 heading-section ftco-animate text-center">
+        <div className="col-md-12 heading-section  text-center">
           <h3 className="subheading">Services</h3>
           <h2 className="mb-1">Treatments</h2>
         </div>
@@ -237,7 +237,7 @@ export default function Home(){
         <div className="col-lg-4">
           <div className="row no-gutters">
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
+              <div className="treatment w-100 text-center  border border-right-0 border-bottom-0 p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-candle" />
                 </div>
@@ -250,7 +250,7 @@ export default function Home(){
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
+              <div className="treatment w-100 text-center border border-bottom-0 p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-spa-1" />
                 </div>
@@ -261,7 +261,7 @@ export default function Home(){
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
+              <div className="treatment w-100 text-center border border-right-0 p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-stone" />
                 </div>
@@ -274,7 +274,7 @@ export default function Home(){
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border p-3 py-4">
+              <div className="treatment w-100 text-center  border p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-lotus" />
                 </div>
@@ -397,7 +397,7 @@ export default function Home(){
         <div className="col-lg-4">
           <div className="row no-gutters">
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
+              <div className="treatment w-100 text-center  border border-right-0 border-bottom-0 p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-beauty-treatment" />
                 </div>
@@ -410,7 +410,7 @@ export default function Home(){
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
+              <div className="treatment w-100 text-center border border-bottom-0 p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-relax" />
                 </div>
@@ -421,7 +421,7 @@ export default function Home(){
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
+              <div className="treatment w-100 text-center border border-right-0 p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-massage" />
                 </div>
@@ -434,7 +434,7 @@ export default function Home(){
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-stretch">
-              <div className="treatment w-100 text-center ftco-animate border p-3 py-4">
+              <div className="treatment w-100 text-center  border p-3 py-4">
                 <div className="icon d-flex justify-content-center align-items-center">
                   <span className="flaticon-rose" />
                 </div>
@@ -452,13 +452,13 @@ export default function Home(){
   <section className="ftco-section bg-light">
     <div className="container">
       <div className="row justify-content-center mb-5 pb-3">
-        <div className="col-md-7 heading-section ftco-animate text-center">
+        <div className="col-md-7 heading-section  text-center">
           <h3 className="subheading">Pricing Tables</h3>
           <h2 className="mb-1">Pricing Treatments</h2>
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4 ftco-animate">
+        <div className="col-md-4 ">
           <div className="block-7">
             <div className="text-center">
               <h2 className="heading">Year Card</h2>
@@ -479,7 +479,7 @@ export default function Home(){
             </div>
           </div>
         </div>
-        <div className="col-md-4 ftco-animate">
+        <div className="col-md-4 ">
           <div className="block-7">
             <div className="text-center">
               <h2 className="heading">Monthly Card</h2>
@@ -500,7 +500,7 @@ export default function Home(){
             </div>
           </div>
         </div>
-        <div className="col-md-4 ftco-animate">
+        <div className="col-md-4 ">
           <div className="block-7">
             <div className="text-center">
               <h2 className="heading">Weekly Card</h2>
@@ -527,12 +527,12 @@ export default function Home(){
   <section className="ftco-section testimony-section">
     <div className="container">
       <div className="row justify-content-center mb-5 pb-3">
-        <div className="col-md-10 heading-section ftco-animate text-center">
+        <div className="col-md-10 heading-section  text-center">
           <h3 className="subheading">Testimony</h3>
           <h2 className="mb-1">Successful Stories</h2>
         </div>
       </div>
-      <div className="row ftco-animate">
+      <div className="row ">
         <div className="col-md-12">
           <div className="carousel-testimony owl-carousel">
             <div className="item">
@@ -681,7 +681,7 @@ export default function Home(){
       <div className="row justify-content-center">
         <div className="col-md-10">
           <div className="row">
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={2560}>
@@ -691,7 +691,7 @@ export default function Home(){
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={60}>
@@ -701,7 +701,7 @@ export default function Home(){
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={50}>
@@ -711,7 +711,7 @@ export default function Home(){
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ">
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number" data-number={100}>
@@ -729,13 +729,13 @@ export default function Home(){
   <section className="ftco-section bg-light">
     <div className="container">
       <div className="row justify-content-center mb-5 pb-3">
-        <div className="col-md-7 heading-section ftco-animate text-center">
+        <div className="col-md-7 heading-section text-center">
           <h3 className="subheading">Blog</h3>
           <h2 className="mb-1">Recent Posts</h2>
         </div>
       </div>
       <div className="row d-flex">
-        <div className="col-md-4 d-flex ftco-animate">
+        <div className="col-md-4 d-flex ">
           <div className="blog-entry justify-content-end">
             <Link
               to="blog-single.html"
@@ -762,7 +762,7 @@ export default function Home(){
             </div>
           </div>
         </div>
-        <div className="col-md-4 d-flex ftco-animate">
+        <div className="col-md-4 d-flex ">
           <div className="blog-entry justify-content-end">
             <Link
               to="blog-single.html"
@@ -789,7 +789,7 @@ export default function Home(){
             </div>
           </div>
         </div>
-        <div className="col-md-4 d-flex ftco-animate">
+        <div className="col-md-4 d-flex ">
           <div className="blog-entry">
             <Link
               to="blog-single.html"
@@ -822,13 +822,13 @@ export default function Home(){
   <section className="ftco-gallery ftco-section">
     <div className="container">
       <div className="row justify-content-center mb-5 pb-3">
-        <div className="col-md-7 heading-section ftco-animate text-center">
+        <div className="col-md-7 heading-section  text-center">
           <h3 className="subheading">Gallery</h3>
           <h2 className="mb-1">See the latest photos</h2>
         </div>
       </div>
       <div className="row">
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-1.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -839,7 +839,7 @@ export default function Home(){
             </div>
           </Link>
         </div>
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-2.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -850,7 +850,7 @@ export default function Home(){
             </div>
           </Link>
         </div>
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-3.jpg"
             className="gallery image-popup img d-flex align-items-center"
@@ -861,7 +861,7 @@ export default function Home(){
             </div>
           </Link>
         </div>
-        <div className="col-md-3 ftco-animate">
+        <div className="col-md-3 ">
           <Link
             to="images/gallery-4.jpg"
             className="gallery image-popup img d-flex align-items-center"

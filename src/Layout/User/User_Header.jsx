@@ -7,7 +7,7 @@ export default function User_Header(){
     id="ftco-navbar"
   >
     <div className="container">
-      <Link className="navbar-brand" to="index.html">
+      <Link className="navbar-brand" to="/">
         <span className="flaticon-lotus" />
         Energen S
       </Link>
@@ -35,17 +35,17 @@ export default function User_Header(){
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="treatments.html" className="nav-link">
+            <Link to="treatments" className="nav-link">
               Treatments
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="specialists.html" className="nav-link">
+            <Link to="specialists" className="nav-link">
               Specialists
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="pricing.html" className="nav-link">
+            <Link to="pricing" className="nav-link">
               Pricing
             </Link>
           </li>
@@ -68,7 +68,7 @@ export default function User_Header(){
       </div>
     </div>
   </nav>
-  {/* END nav */}
+ 
 </>
 
   )
