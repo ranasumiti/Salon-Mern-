@@ -1,6 +1,50 @@
-import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login(){
+  const[name,setName]=useState();
+  const[email,setEmail]=useState();
+  const[password,setPassword]=useState();
+  const nav=useNavigate()
+
+
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+  
+  const data={
+    name:name,
+    email:email,
+    password:password,
+  }
+
+    axios
+      .post("https://kizaapi.ksesystem.com/api/user/login", data)
+      .then((res) => {
+
+        if (res.data.success){
+        console.log(res.data)
+        localStorage.setItem("Name",res.data.data.name)
+        localStorage.setItem("email",res.data.data.email)
+        localStorage.setItem("password".res.data.data.password)
+        localStorage.setItem("token",res.data.token)
+        const userType=res.data.data.userType
+        if (userType==1){
+nav("/about")
+        }
+        else{
+nav("/")
+        }
+      }
+      
+      
+      })
+      .catch((error) => {
+        console.log( error);
+      });
+
+}
+  
   return(
     <>
     
@@ -28,7 +72,8 @@ export default function Login(){
       <div className="row d-flex justify-content-center">
         <div className="col-md-1" />
         <div className="col-md-6 ">
-          <form action="#" className="contact-form">
+          <form action="#" className="contact-form"
+          onSubmit={handleSubmit}>
             <div className="row">
                 
               <div className="col-md-12">
@@ -37,6 +82,10 @@ export default function Login(){
                     type="text"
                     className="form-control"
                     placeholder="Your Name"
+                    value={name}
+                    onChange={(e)=>{
+                      setName(e.target.value)
+                    }}
                   />
                 </div>
               </div>
@@ -46,6 +95,10 @@ export default function Login(){
                     type="text"
                     className="form-control"
                     placeholder="Your Email"
+                    value={email}
+                    onChange={(e)=>{
+                      setEmail(e.target.value)
+                    }}
                   />
                 </div>
               </div>
@@ -55,13 +108,17 @@ export default function Login(){
                 type="text"
                 className="form-control"
                 placeholder="Password"
+                value={password}
+                 onChange={(e) => {
+                    setPassword(e.target.value)
+                  }}
+                
               />
             </div>
            
             <div className="col-md-12 text-center" >
               <input
                 type="submit"
-                defaultValue="Submitted"
                 className="btn btn-primary py-3 px-5"
               />
             </div>
