@@ -10,6 +10,7 @@ import Specialists from "./Components/User/Specialists";
 import Pricing from "./Components/User/Pricing";
 import Blog from "./Components/User/Blog";
 import BlogSingle from "./Components/User/BlogSingle";
+import Register from "./Components/Auth/Register";
 
 
 
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="blog" element={<Blog/>} />
           <Route path="/blog/blogsingle" element={<BlogSingle/>} />
           <Route path="login" element={<Login />} />
+          <Route path="/register" element={<Register/>}/>
 
           
         </Route>
