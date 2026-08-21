@@ -1,133 +1,249 @@
 import axios from "axios";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Login(){
-  const[name,setName]=useState();
-  const[email,setEmail]=useState();
-  const[password,setPassword]=useState();
-  const nav=useNavigate()
+  const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [showPassword, setShowPassword] = useState(false);
+const [passwordError, setPasswordError] = useState("");
+const nav=useNavigate();
 
-
-  const handleSubmit=(e)=>{
-    e.preventDefault();
+const handlesubmit=(e)=>{
+e.preventDefault();
+const data ={
+  email:email,
+  password:password,
   
-  const data={
-    name:name,
-    email:email,
-    password:password,
+}
+axios.post("https://kizaapi.ksesystem.com/api/user/login",data)
+.then((res)=>{
+  if(res.data.success){
+localStorage.setItem("email",res.data.data.email)
+localStorage.setItem("name",res.data.data.name)
+localStorage.setItem("password",res.data.data.password)
+localStorage.setItem("userId",res.data.data._id)
+localStorage.setItem("userType",res.data.data.userType)
+localStorage.setItem("token",res.data.token)
+const userType =res.data.data.userType
+if (userType==1){
+  nav("/all")
+   alert("Login successfully");
+}
+else{
+  nav("/")
+}
   }
 
-    axios
-      .post("https://kizaapi.ksesystem.com/api/user/login", data)
-      .then((res) => {
+})
+.catch((err)=>{
+  console.log(err)
+})
 
-        if (res.data.success){
-        console.log(res.data)
-        localStorage.setItem("Name",res.data.data.name)
-        localStorage.setItem("email",res.data.data.email)
-        localStorage.setItem("password".res.data.data.password)
-        localStorage.setItem("token",res.data.token)
-        const userType=res.data.data.userType
-        if (userType==1){
-nav("/about")
-        }
-        else{
-nav("/")
-        }
-      }
-      
-      
-      })
-      .catch((error) => {
-        console.log( error);
-      });
 
 }
-  
+
+
+
   return(
     <>
-    
-<section
-    className="hero-wrap hero-wrap-2"
-    style={{ backgroundImage: 'url("images/bg_2.jpg")' }}
-    data-stellar-background-ratio="0.5"
-  >
-    <div className="overlay" />
-    <div className="container">
-      <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-        <div className="col-md-9 text-center">
-          <h1 className="mb-3 bread">LOGIN FORM</h1>
-          <p className="breadcrumbs">
-            <span className="mr-2">
-              <Link to="/">home</Link>
-            </span>{" "}
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section className="contact-section">
-    <div className="container">
-      <div className="row d-flex justify-content-center">
-        <div className="col-md-1" />
-        <div className="col-md-6 ">
-          <form action="#" className="contact-form"
-          onSubmit={handleSubmit}>
-            <div className="row">
-                
-              <div className="col-md-12">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Name"
-                    value={name}
-                    onChange={(e)=>{
-                      setName(e.target.value)
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="col-md-12">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Email"
-                    value={email}
-                    onChange={(e)=>{
-                      setEmail(e.target.value)
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="form-group">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Password"
-                value={password}
-                 onChange={(e) => {
-                    setPassword(e.target.value)
-                  }}
-                
-              />
-            </div>
-           
-            <div className="col-md-12 text-center" >
-              <input
-                type="submit"
-                className="btn btn-primary py-3 px-5"
-              />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+<div
+  className="container-fluid"
+  style={{
+    backgroundColor: "#FFFDFB",
+    padding: "80px 20px"
+  }}
+>
+  <div className="row justify-content-center">
 
+    <div className="col-md-6 col-lg-5">
+
+      <form
+        action="#"
+        className="contact-form"
+        onSubmit={handlesubmit}
+        style={{
+          backgroundColor: "#FFFFFF",
+          padding: "45px",
+          borderRadius: "15px",
+          boxShadow: "0 8px 30px rgba(80, 50, 40, 0.10)"
+        }}
+      >
+
+        {/* Heading */}
+        <div className="text-center mb-4">
+
+          <h2
+            style={{
+              color: "#3B302D",
+              fontSize: "36px",
+              fontWeight: "600",
+              marginBottom: "8px"
+            }}
+          >
+            Welcome Back
+          </h2>
+
+          <p
+            style={{
+              color: "#9B8580",
+              fontSize: "15px"
+            }}
+          >
+            Login to continue your beauty journey
+          </p>
+
+        </div>
+
+
+        {/* Email */}
+        <div className="form-group mb-3">
+
+          <label
+            style={{
+              color: "#4A3A36",
+              fontWeight: "500",
+              marginBottom: "7px"
+            }}
+          >
+            Email
+          </label>
+
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            required
+            style={{
+              height: "50px",
+              border: "1px solid #E5D2CC",
+              borderRadius: "8px",
+              padding: "10px 15px"
+            }}
+          />
+
+        </div>
+
+
+        {/* Password */}
+        <div className="form-group mb-3">
+
+          <label
+            style={{
+              color: "#4A3A36",
+              fontWeight: "500",
+              marginBottom: "7px"
+            }}
+          >
+            Password
+          </label>
+
+          <div className="position-relative">
+
+            <input
+              type={showPassword ? "text" : "password"}
+              className="form-control"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => {
+                setPassword(e.target.value);
+                setPasswordError("");
+              }}
+              required
+              style={{
+                height: "50px",
+                border: "1px solid #E5D2CC",
+                borderRadius: "8px",
+                padding: "10px 65px 10px 15px"
+              }}
+            />
+
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              style={{
+                position: "absolute",
+                right: "10px",
+                top: "8px",
+                border: "none",
+                background: "none",
+                color: "#B77D6D",
+                fontSize: "14px"
+              }}
+            >
+              {showPassword ? "Hide" : "Show"}
+            </button>
+
+          </div>
+
+        </div>
+
+
+        {/* Password Error */}
+        {passwordError && (
+          <p
+            style={{
+              color: "red",
+              fontSize: "14px",
+              marginTop: "-5px"
+            }}
+          >
+            {passwordError}
+          </p>
+        )}
+
+
+        {/* Login Button */}
+        <button
+          type="submit"
+          className="w-100"
+          style={{
+            height: "52px",
+            backgroundColor: "#C58F7E",
+            color: "#FFFFFF",
+            border: "none",
+            borderRadius: "8px",
+            fontSize: "16px",
+            fontWeight: "500"
+          }}
+        >
+          Login
+        </button>
+
+
+        {/* Register Link */}
+        <p
+          className="text-center mt-4 mb-0"
+          style={{
+            color: "#8B7770",
+            fontSize: "14px"
+          }}
+        >
+          Don't have an account?{" "}
+
+          <a
+            href="/register"
+            style={{
+              color: "#B77D6D",
+              fontWeight: "600",
+              textDecoration: "none"
+            }}
+          >
+            Create Account
+          </a>
+
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
 
     </>
   )

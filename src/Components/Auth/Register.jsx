@@ -34,7 +34,7 @@ const [passwordError, setPasswordError] = useState("");
       .then((res) => {
         console.log("res:", res.data);
         alert("Register successfully");
-       nav("/")
+       nav("/login")
         
 
       })
