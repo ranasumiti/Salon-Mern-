@@ -15,8 +15,9 @@ import Login from "./Components/Auth/Login";
 
 
 
+
 export default function App() {
-  return (
+  return (<>
     <BrowserRouter>
       <Routes>
 
@@ -29,17 +30,18 @@ export default function App() {
           <Route path="treatments" element={<Treatments />} />
           <Route path="treatments" element={<Treatments />} />
           <Route path="specialists" element={<Specialists />} />
-          <Route path="pricing" element={<Pricing/>} />
-          <Route path="blog" element={<Blog/>} />
-          <Route path="/blog/blogsingle" element={<BlogSingle/>} />
-         <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
+          <Route path="pricing" element={<Pricing />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="/blog/blogsingle" element={<BlogSingle />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
 
-          
+
         </Route>
+
 
       </Routes>
     </BrowserRouter>
-  );
+  </>);
 }
 
