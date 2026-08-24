@@ -12,6 +12,8 @@ import Blog from "./Components/User/Blog";
 import BlogSingle from "./Components/User/BlogSingle";
 import Register from "./Components/Auth/Register";
 import Login from "./Components/Auth/Login";
+import AdminLayout from "./Components/admin/layout/AdminLayout";
+import Dashboard from "./Components/admin/pages/Dashboard";
 
 
 
@@ -39,7 +41,12 @@ export default function App() {
 
         </Route>
 
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route path="/admin" element={<Dashboard />}/>
 
+
+
+        </Route>
       </Routes>
     </BrowserRouter>
   </>);
