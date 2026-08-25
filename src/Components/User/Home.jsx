@@ -28,7 +28,7 @@ export default function Home(){
               Get in Touch
             </Link>
             <Link
-              to="#"
+              to="contact"
               className="btn btn-outline-primary p-3 px-5 py-4 ml-md-2"
             >
               Contact
