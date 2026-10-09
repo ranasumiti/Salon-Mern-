@@ -10,6 +10,10 @@ const AuthMiddleware = require('../middleware/AuthMiddleware')
 router.post("/register",cloudUpload.single('profileImage'),UserController.register)
 router.post("/verifyotp",UserController.verifyOTP)
 router.post("/login",UserController.login)
+router.post("/login/forgotpassword",UserController.forgotPassword)
+router.post("/login/reset",UserController.resetPassword)
+
+
 
 
 

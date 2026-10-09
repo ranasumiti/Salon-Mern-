@@ -3,7 +3,7 @@ const joi = require('joi')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { uploading } = require('../../helper/Cloudinary')
-// const sendEmail = require('../../utilities/Mail')
+const sendEmail = require('../../utilities/Mail')
 const saltPassword = 10
 
 
