@@ -11,7 +11,7 @@ const seed = async ()=>{
         let securepassword = await bcrypt.hash("love@123", 10)
         let userObj = UserModel()
         userObj.name = "admin"
-        userObj.email = "admin@gmail.com"
+        userObj.email = "admin123@gmail.com"
         userObj.userType = 1
         userObj.phone = "8746539673"
         userObj.autoId = "USER-1"

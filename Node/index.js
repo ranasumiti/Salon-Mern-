@@ -17,6 +17,12 @@ const admin = require("./server/route/AdminRoutes")
 app.use("/admin",admin)
 seed()
 
+const student = require('./server/route/StudentRoutes')
+app.use("/student",student)
+
+const beautician = require('./server/route/BeauticianRoutes')
+app.use("/beautician", beautician)
+
 const PORT = 5000;
 
 app.listen(PORT, () => {
