@@ -11,27 +11,31 @@ const saltPassword = 10
 const register = async (req, res) => {
     try {
         const formData = req.body || {}
-console.log(formData)
+        console.log(formData)
         const registerSchema = joi.object({
             name: joi.string().required().min(3).max(50),
             email: joi.string().email().required(),
             phone: joi.string().required().pattern(/^[0-9]{10}$/),
-            password: joi.string().required().max(6),
-        }) 
+            password: joi.string().required().min(6).max(20),
+            gender: joi.string().valid('Male', 'Female', 'Other'),
+           
 
-        const {value, error} = registerSchema.validate(formData, {abortEarly: false})
-        let errors = error?.details?.map((item)=>{
+
+        })
+
+        const { value, error } = registerSchema.validate(formData, { abortEarly: false })
+        let errors = error?.details?.map((item) => {
             return item.message;
         })
-        if(errors){
+        if (errors) {
             return res.json({
-                stauts:400,
-                success:false,
+                stauts: 400,
+                success: false,
                 message: errors
-                
+
             })
         }
-       
+
 
         let existsUser = await UserModel.findOne({ email: value.email })
         if (existsUser) {
@@ -42,7 +46,7 @@ console.log(formData)
             })
         }
 
-          
+
 
         let count = await UserModel.countDocuments({})
         let securePassword = await bcrypt.hash(value.password, saltPassword)
@@ -56,7 +60,10 @@ console.log(formData)
         userobj.name = value.name,
             userobj.email = value.email,
             userobj.phone = value.phone,
-            userobj.password = securePassword
+            userobj.password = securePassword,
+            userobj.gender = value.gender,
+            userobj.userType = 2  // Customer panel
+            
 
 
         userobj.otp = otp
@@ -65,11 +72,11 @@ console.log(formData)
 
         userobj.autoId = 'USER-' + (count + 1);
 
-          let imageUrl =""
-        if(!!req.file){
-         
+        let imageUrl = ""
+        if (!!req.file) {
+
             imageUrl = await uploading(req.file?.buffer)
-            userobj.profileImage = imageUrl 
+            userobj.profileImage = imageUrl
         }
         const saveuser = await userobj.save()
 
@@ -83,7 +90,7 @@ console.log(formData)
     }
     catch (error) {
 
-       return  res.json({
+        return res.json({
             status: 500,
             success: false,
             message: "internal server error" + error
@@ -226,7 +233,7 @@ const login = async (req, res) => {
                 userType: User.userType
             }
             // console.log(payload)
-            let token = jwt.sign(payload, process.env.JWT_SECRET, {expiresIn:"1d"})
+            let token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1d" })
             return res.json({
                 status: 200,
                 success: true,
@@ -255,7 +262,7 @@ const changePassword = async (req, res) => {
         if (!formData.oldPassword) validation += "old Password is required"
         if (!formData.newPassword) validation += "new Password is required"
 
-         if (validation) {
+        if (validation) {
             return res.json({
                 status: 400,
                 success: false,
@@ -265,7 +272,7 @@ const changePassword = async (req, res) => {
 
         const userId = req.decoded?._id
         const userData = await UserModel.findOne({ _id: userId })
-         if (!userData) {
+        if (!userData) {
             return res.json({
                 status: 404,
                 success: false,
@@ -334,10 +341,10 @@ const forgotPassword = async (req, res) => {
 
         const savedUser = await userData.save()
 
-        let payload ={
+        let payload = {
             email: formData.email,
-            subject:"OTP for password reset",
-            html:`<div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 30px; background: #f7f7f7;">
+            subject: "OTP for password reset",
+            html: `<div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 30px; background: #f7f7f7;">
             
             <div style="background: #ffffff; padding: 30px; border-radius: 10px;">
                 
@@ -388,7 +395,7 @@ const forgotPassword = async (req, res) => {
             status: 200,
             success: true,
             message: "OTP Generated",
-            data: savedUser.otp
+            // data: savedUser.otp
         })
     }
     catch (err) {
@@ -465,4 +472,4 @@ const resetPassword = async (req, res) => {
 
 }
 
-module.exports ={register,verifyOTP, login, forgotPassword, changePassword, resetPassword } 
+module.exports = { register, verifyOTP, login, forgotPassword, changePassword, resetPassword } 

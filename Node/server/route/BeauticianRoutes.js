@@ -4,7 +4,8 @@ const router=express.Router()
 
 const BeauticianController = require('../apis/beautician/BeauticianController')
 const {cloudUpload}=require('../middleware/Multer')
-const AuthMiddleware = require('../middleware/AuthMiddleware')
+const BeauticianMiddleware = require("../middleware/BeauticianMiddleware")
+
 
 
 router.post("/register",cloudUpload.single('profileImage'),BeauticianController.register)
@@ -17,7 +18,7 @@ router.post("/reset",BeauticianController.resetPassword)
 
 
 
-router.use(AuthMiddleware)
+router.use(BeauticianMiddleware)
 router.post("/login/changepassword",BeauticianController.changePassword)
 
 

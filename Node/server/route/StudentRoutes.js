@@ -4,7 +4,8 @@ const router=express.Router()
 
 const StudentController = require('../apis/student/StudentController')
 const {cloudUpload}=require('../middleware/Multer')
-const AuthMiddleware = require('../middleware/AuthMiddleware')
+const StudentMiddleware = require("../middleware/StudentMiddleware")
+
 
 
 router.post("/register",cloudUpload.single('profileImage'),StudentController.register)
@@ -17,7 +18,7 @@ router.post("/reset",StudentController.resetPassword)
 
 
 
-router.use(AuthMiddleware)
+router.use(StudentMiddleware)
 router.post("/login/changepassword",StudentController.changePassword)
 
 
