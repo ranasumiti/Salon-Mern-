@@ -15,7 +15,7 @@ const BeauticianSchema = new mongoose.Schema({
     otp: { type: String, default:''},
     otpExpiry: {type: Date, default:''},
     isVerified: {type: Boolean,default: true},
-    userType: { type: Number, default: 2 },
+    userType: { type: Number, default: 4 },
     status: { type: Boolean, default: true },
     createdAt: { type: Date, default: Date.now },
 
